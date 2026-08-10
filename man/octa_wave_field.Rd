@@ -2,19 +2,21 @@
 % Please edit documentation in R/functions.R
 \name{octa_wave_field}
 \alias{octa_wave_field}
-\title{neuartige Oktaeder-Quantenwelle mit Raumdämpfung}
+\title{Neuartige Oktaeder-Quantenwelle mit Raumdämpfung / Novel Octahedral Quantum Wave with Spatial Damping}
 \usage{
 octa_wave_field(x, y, z, freq = 2, radius = 1.5, damping = 0.2)
 }
 \arguments{
-\item{x, y, z}{Die Koordinaten des Punktes im Raum.}
+\item{x, y, z}{Die Koordinaten des Punktes im Raum / The coordinates of the point in space.}
 
-\item{freq}{Die Schwingungsfrequenz der Wellenkomponenten.}
+\item{freq}{Die Schwingungsfrequenz der Wellenkomponenten / The vibration frequency of the wave components.}
 
-\item{radius}{Der Radius des zugrundeliegenden Oktaeders.}
+\item{radius}{Der Radius des zugrundeliegenden Oktaeders / The radius of the underlying octahedron.}
 
-\item{damping}{Der Dämpfungsfaktor (wie schnell die Welle im Raum abklingt).}
+\item{damping}{Der Dämpfungsfaktor (wie schnell die Welle im Raum abklingt) / The damping factor (how fast the wave decays in space).}
 }
 \description{
-Berechnet die Superposition von Wellen, die von den 6 Ecken eines Oktaeders ausgestrahlt werden, inklusive einer quantenmechanischen Amplitudendämpfung.
+\link{DEUTSCH} Berechnet die Superposition von Wellen, die von den 6 Ecken eines Oktaeders ausgestrahlt werden, inklusive einer quantenmechanischen Amplitudendämpfung.
+
+\link{ENGLISH} Computes the superposition of waves radiated from the 6 vertices of an octahedron, including quantum-mechanical amplitude damping.
 }

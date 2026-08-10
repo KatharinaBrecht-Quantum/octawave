@@ -2,15 +2,17 @@
 % Please edit documentation in R/functions.R
 \name{plot_octawave}
 \alias{plot_octawave}
-\title{Visualisierung der octawave Quantenwelle}
+\title{Visualisierung der octawave Quantenwelle / Visualization of the octawave Quantum Wave}
 \usage{
 plot_octawave(resolution = 200, range = 8)
 }
 \arguments{
-\item{resolution}{Die Auflösung des Gitters (höhere Werte bedeuten feinere Bilder).}
+\item{resolution}{Die Auflösung des Gitters (höhere Werte bedeuten feinere Bilder) / The grid resolution (higher values yield finer images).}
 
-\item{range}{Der sichtbare Bereich auf der X- und Y-Achse.}
+\item{range}{Der sichtbare Bereich auf der X- und Y-Achse / The visible range on the X and Y axes.}
 }
 \description{
-Erstellt einen automatischen 2D-Schnitt durch das Oktaeder-Wellenfeld im klassischen MATLAB-Stil.
+\link{DEUTSCH} Erstellt einen automatischen 2D-Schnitt durch das Oktaeder-Wellenfeld im klassischen MATLAB-Stil.
+
+\link{ENGLISH} Generates an automated 2D cross-section through the octahedral wave field in classic MATLAB style.
 }
