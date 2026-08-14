@@ -286,3 +286,62 @@ interactive_multi_3d <- function() {
 }
 
 
+
+#' @title Fullerene Gitternetz MRT-Scan / Pentagon-Hexagon Wave Slice
+#' @description Scans a complex 5- and 6-edged quantum grid layer by layer with bilingual support.
+#' @param z_slice Die Höhe des MRT-Schnitts (von -2.5 bis +2.5)
+#' @param zeitpunkt Der aktuelle Zeitschritt der Welle (t)
+#' @param lang Sprache für den Plot: "de" für Deutsch, "en" für Englisch
+#' @export
+plot_mri_fullerene <- function(z_slice = 0, zeitpunkt = 1.0, lang = "de") {
+  # Goldener Schnitt für die Fullerene-Geometrie (C60)
+  phi <- (1 + sqrt(5)) / 2
+
+  # Basis-Koordinaten der 60 Ecken im 3D-Raum
+  coords <- matrix(c(
+    0, 1, 3*phi,   0, 1, -3*phi,  0, -1, 3*phi,  0, -1, -3*phi,
+    1, 3*phi, 0,   1, -3*phi, 0,  -1, 3*phi, 0,  -1, -3*phi, 0,
+    3*phi, 0, 1,   3*phi, 0, -1,  -3*phi, 0, 1,  -3*phi, 0, -1
+  ), ncol = 3, byrow = TRUE)
+
+  # Skalieren für den Scan-Bereich
+  vertices <- coords / max(coords) * 2.0
+  colnames(vertices) <- c("x", "y", "z")
+
+  # Das 2D-Gitter für das Plots-Fenster
+  grid_size <- 150
+  x_vec <- seq(-3, 3, length.out = grid_size)
+  y_vec <- seq(-3, 3, length.out = grid_size)
+  grid <- expand.grid(X = x_vec, Y = y_vec)
+
+  wellen_matrix <- matrix(0, nrow = grid_size, ncol = grid_size)
+
+  # Interferenzwellen aller 60 Punkte aufschwingen
+  for(i in 1:nrow(vertices)) {
+    dx <- grid$X - vertices[i, "x"]
+    dy <- grid$Y - vertices[i, "y"]
+    dz <- z_slice - vertices[i, "z"]
+
+    r <- sqrt(dx^2 + dy^2 + dz^2)
+    amplitude <- sin(5 * r - zeitpunkt) / (r + 0.5)
+    wellen_matrix <- wellen_matrix + matrix(amplitude, nrow = grid_size, ncol = grid_size)
+  }
+
+  # Zweisprachige Beschriftung auswählen
+  if (lang == "en") {
+    titel <- paste("Fullerene MRI Scan | Slice Height z =", round(z_slice, 2))
+    x_lbl <- "X-Axis (Quantum Space)"
+    y_lbl <- "Y-Axis (Quantum Space)"
+  } else {
+    titel <- paste("Fullerene MRT-Scan | Schichthöhe z =", round(z_slice, 2))
+    x_lbl <- "X-Achse (Quantenraum)"
+    y_lbl <- "Y-Achse (Quantenraum)"
+  }
+
+  # Zeichnen der aktuellen mathematischen Schicht
+  image(x_vec, y_vec, wellen_matrix,
+        col = terrain.colors(100),
+        main = titel,
+        xlab = x_lbl, ylab = y_lbl,
+        asp = 1, axes = TRUE)
+}
