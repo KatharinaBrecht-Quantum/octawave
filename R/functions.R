@@ -345,3 +345,62 @@ plot_mri_fullerene <- function(z_slice = 0, zeitpunkt = 1.0, lang = "de") {
         xlab = x_lbl, ylab = y_lbl,
         asp = 1, axes = TRUE)
 }
+
+
+#' @title Klassischer Oktaeder-MRT-Scan / Octawave Wave Slice
+#' @description Scans Katharinas original 6-cornered octawave geometry layer by layer.
+#' @param z_slice Die Höhe des MRT-Schnitts (von -2.5 bis +2.5)
+#' @param zeitpunkt Der aktuelle Zeitschritt der Welle (t)
+#' @param lang Sprache für den Plot: "de" für Deutsch, "en" für Englisch
+#' @export
+plot_mri_octawave <- function(z_slice = 0, zeitpunkt = 1.0, lang = "de") {
+  # Die 6 klassischen Ecken des Oktaeders im 3D-Raum definieren
+  vertices <- matrix(c(
+    0,  0,  2,   # Oberste Spitze
+    0,  0, -2,   # Unterste Spitze
+    2,  0,  0,   # Rechte Ecke
+    -2,  0,  0,   # Linke Ecke
+    0,  2,  0,   # Hintere Ecke
+    0, -2,  0    # Vordere Ecke
+  ), ncol = 3, byrow = TRUE)
+  colnames(vertices) <- c("x", "y", "z")
+
+  # Das 2D-Gitter für das Plots-Fenster
+  grid_size <- 150
+  x_vec <- seq(-3, 3, length.out = grid_size)
+  y_vec <- seq(-3, 3, length.out = grid_size)
+  grid <- expand.grid(X = x_vec, Y = y_vec)
+
+  wellen_matrix <- matrix(0, nrow = grid_size, ncol = grid_size)
+
+  # Interferenzwellen der 6 Oktaeder-Spitzen berechnen
+  for(i in 1:nrow(vertices)) {
+    dx <- grid$X - vertices[i, "x"]
+    dy <- grid$Y - vertices[i, "y"]
+    dz <- z_slice - vertices[i, "z"]
+
+    r <- sqrt(dx^2 + dy^2 + dz^2)
+    amplitude <- sin(5 * r - zeitpunkt) / (r + 0.5)
+    wellen_matrix <- wellen_matrix + matrix(amplitude, nrow = grid_size, ncol = grid_size)
+  }
+
+  # Zweisprachige Beschriftung
+  if (lang == "en") {
+    titel <- paste("Classic Octawave MRI Scan | Slice Height z =", round(z_slice, 2))
+    x_lbl <- "X-Axis (Quantum Space)"
+    y_lbl <- "Y-Axis (Quantum Space)"
+  } else {
+    titel <- paste("Klassischer Octawave MRT-Scan | Schichthöhe z =", round(z_slice, 2))
+    x_lbl <- "X-Achse (Quantenraum)"
+    y_lbl <- "Y-Achse (Quantenraum)"
+  }
+
+  # Zeichnen im Plots-Fenster
+  image(x_vec, y_vec, wellen_matrix,
+        col = terrain.colors(100),
+        main = titel,
+        xlab = x_lbl, ylab = y_lbl,
+        asp = 1, axes = TRUE)
+}
+
+

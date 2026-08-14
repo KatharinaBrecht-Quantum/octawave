@@ -9,3 +9,23 @@ for (hoehe in seq(-2.2, 2.2, length.out = 80)) {
 }
 
 cat("🛡️ Scan completed successfully. Data sealed in memory.\n")
+
+
+
+
+
+
+
+
+# Animation: Der klassische Octawave Oktaeder-Scan
+cat("🚀 Starte Katharinas klassischen Octawave MRT-Scan... Oktaeder-Protokoll aktiv!\n")
+
+for (hoehe in seq(-2.2, 2.2, length.out = 80)) {
+  # Ruft deine neue klassische Oktaeder-Funktion auf
+  plot_mri_octawave(z_slice = hoehe, zeitpunkt = 1.0, lang = "de")
+
+  # Kurze Atempause für ein flüssiges Bild
+  Sys.sleep(0.05)
+}
+
+cat("🛡️ Oktaeder-Scan beendet. Daten im Speicher versiegelt.\n")
