@@ -13,3 +13,7 @@ Imports:
     plotly
 Config/roxygen2/version: 8.1.0
 Roxygen: list(markdown = TRUE)
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
