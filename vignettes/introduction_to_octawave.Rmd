@@ -1,0 +1,52 @@
+---
+title: "Introduction to the octawave Package"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to the octawave Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Welcome to the `octawave` package! This library is specifically designed for the simulation and visualization of three-dimensional octahedral quantum wave interferences and spatial resonance fields. Additionally, the package provides advanced functions to generate virtual Magnetic Resonance Imaging (MRI) slice scans.
+
+This guide introduces you to the core functionalities of the package.
+
+## 1. Load the Package
+
+First, load the package into your current R session:
+
+```{r setup}
+library(octawave)
+```
+
+## 2. MRI Slice Simulation
+
+The package contains specialized algorithms to compute virtual MRI scans through geometric structures. You can simulate individual slices at a specific height along the Z-axis:
+
+```R
+# Display a single MRI slice for Fullerene at height z = 0
+plot_mri_fullerene(z_slice = 0.0, lang = "de")
+
+# Display a single MRI slice for Octawave structures
+plot_mri_octawave(z_slice = 0.5, lang = "de")
+```
+
+## 3. Automated Multi-Format Export
+
+For scientific presentations, you can automatically export a complete series of slices as high-resolution PNG images and a multi-page presentation PDF with a single command:
+
+```R
+# Automatically export slice series of my beloved Fullerene and Octawave models 
+# (Katharina M. Brecht) 
+export_all_mri_scans(start_z = -2.0, end_z = 2.0, schritte = 10)
+```
+
+After running this command, two new folders (`KBrecht_Fullerene_MRI_Export` and `KBrecht_Octawave_MRI_Export`) will be created in your current working directory, containing all generated image files.
+

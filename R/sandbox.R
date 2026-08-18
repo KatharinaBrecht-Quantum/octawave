@@ -1,14 +1,14 @@
 # Englische Version der Scan-Animation starten
-cat("🚀 Booting MRI scanner... Starting Katharina’s Fullerene quantum protocol!\n")
+cat("\U0001f680 Booting MRI scanner... Starting Katharinas Fullerene quantum protocol!\n")
 
-for (hoehe in seq(-2.2, 2.2, length.out = 80)) {
-  # Hier übergeben wir lang = "en" für die englischen Titel!
-  plot_mri_fullerene(z_slice = hoehe, zeitpunkt = 1.0, lang = "en")
+for (height in seq(-2.2, 2.2, length.out = 80)) {
+  # Hier uebergeben wir lang = "en" fuer die englischen Titel!
+  plot_mri_fullerene(z_slice = height, zeitpunkt = 1.0, lang = "en")
 
   Sys.sleep(0.05)
 }
 
-cat("🛡️ Scan completed successfully. Data sealed in memory.\n")
+cat("Scan completed successfully. Data sealed in memory.\n")
 
 
 
@@ -18,14 +18,14 @@ cat("🛡️ Scan completed successfully. Data sealed in memory.\n")
 
 
 # Animation: Der klassische Octawave Oktaeder-Scan
-cat("🚀 Starte Katharinas klassischen Octawave MRT-Scan... Oktaeder-Protokoll aktiv!\n")
+cat("\U0001f680 Starte Katharinas klassischen Octawave MRT-Scan...Starting Katharinas octawave MRI scan.. Oktaeder-Protokoll aktiv!\n")
 
-for (hoehe in seq(-2.2, 2.2, length.out = 80)) {
-  # Ruft deine neue klassische Oktaeder-Funktion auf
-  plot_mri_octawave(z_slice = hoehe, zeitpunkt = 1.0, lang = "de")
+for (height in seq(-2.2, 2.2, length.out = 80)) {
+  # Ruft die neue klassische Oktaeder-Funktion auf
+  plot_mri_octawave(z_slice = height, zeitpunkt = 1.0, lang = "de")
 
-  # Kurze Atempause für ein flüssiges Bild
+  # Kurze Atempause fuer ein fluessiges Bild
   Sys.sleep(0.05)
 }
 
-cat("🛡️ Oktaeder-Scan beendet. Daten im Speicher versiegelt.\n")
+cat("Oktaeder-Scan beendet. Daten im Speicher versiegelt.\n")

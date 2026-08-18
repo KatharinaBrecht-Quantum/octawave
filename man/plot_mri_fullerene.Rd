@@ -7,11 +7,11 @@
 plot_mri_fullerene(z_slice = 0, zeitpunkt = 1, lang = "de")
 }
 \arguments{
-\item{z_slice}{Die Höhe des MRT-Schnitts (von -2.5 bis +2.5)}
+\item{z_slice}{Die Hoehe des MRT-Schnitts (von -2.5 bis +2.5)}
 
 \item{zeitpunkt}{Der aktuelle Zeitschritt der Welle (t)}
 
-\item{lang}{Sprache für den Plot: "de" für Deutsch, "en" für Englisch}
+\item{lang}{Sprache fuer den Plot: "de" fuer Deutsch, "en" fuer Englisch}
 }
 \description{
 Scans a complex 5- and 6-edged quantum grid layer by layer with bilingual support.

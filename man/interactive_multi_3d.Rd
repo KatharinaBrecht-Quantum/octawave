@@ -2,11 +2,11 @@
 % Please edit documentation in R/functions.R
 \name{interactive_multi_3d}
 \alias{interactive_multi_3d}
-\title{Interactive Multi-Drop 3D Zone / Interaktives 3D-Mehrfach-Klick-Cockpit}
+\title{Interactive Multi-Drop 3D Zone / Interaktive 3D-Mehrfach-Klick-Zone}
 \usage{
 interactive_multi_3d()
 }
 \description{
 Allows the user to click 3 times to create overlapping waves in a 3D landscape.
-Erlaubt 3 Mausklicks, um sich überlagernde Wellen in einer 3D-Landschaft zu erzeugen.
+Erlaubt 3 Mausklicks, um sich ueberlagernde Wellen in einer 3D-Landschaft zu erzeugen.
 }

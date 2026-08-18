@@ -7,12 +7,12 @@
 plot_octawave(resolution = 200, range = 8)
 }
 \arguments{
-\item{resolution}{Die Auflösung des Gitters (höhere Werte bedeuten feinere Bilder) / The grid resolution (higher values yield finer images).}
+\item{resolution}{Die Aufloesung des Gitters (hoehere Werte bedeuten feinere Bilder) / The grid resolution (higher values yield finer images).}
 
 \item{range}{Der sichtbare Bereich auf der X- und Y-Achse / The visible range on the X and Y axes.}
 }
 \description{
-\link{DEUTSCH} Erstellt einen automatischen 2D-Schnitt durch das Oktaeder-Wellenfeld im klassischen MATLAB-Stil.
+\strong{DEUTSCH:} Erstellt einen automatischen 2D-Schnitt durch das Oktaeder-Wellenfeld im klassischen MATLAB-Stil.
 
-\link{ENGLISH} Generates an automated 2D cross-section through the octahedral wave field in classic MATLAB style.
+\strong{ENGLISH:} Generates an automated 2D cross-section through the octahedral wave field in classic MATLAB style.
 }

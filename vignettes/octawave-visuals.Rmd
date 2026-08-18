@@ -1,8 +1,8 @@
 ---
-title: "The Geometry of Resonance"
+title: "The Geometry of Resonance - With Figures"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{The Geometry of Resonance}
+  %\VignetteIndexEntry{The Geometry of Resonance - With Figures}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -132,10 +132,23 @@ The exploration of wave geometry reminds us that the human mind knows no boundar
 
 ### References
 
-*   **Ligges, U. (2003).** *Programmieren in R.* Springer-Verlag. (Methodological framework for R package structures and documentation standards).
-*   **Pfeiffer, R., et al. (1996).** *The Geometry and Topology of Fullerenes.* Wiley. (Mathematical definitions of C₆₀ vertex networks and spherical symmetries).
+
+# Mathematical Foundations & Data Sources
+
+The structural definitions, geometric computations, and data visualization workflows utilized in this package are firmly rooted in established scientific literature, foundational textbooks, and software engineering frameworks:
+
+* **Ligges, U. (2003).** *Programmieren in R.* Springer-Verlag. (Methodological framework for R package structures and documentation standards).
+* **Pfeiffer, R., et al. (1996).** *The Geometry and Topology of Fullerenes.* Wiley. (Mathematical definitions of C₆₀ vertex networks and spherical symmetries).
+* **Wickham, H., & Grolemund, G. (2017).** *R for Data Science.* O'Reilly Media. (Methodological foundations for open-science data workflows and visualization aesthetics).
 
 
+## Acknowledgments
+
+I would like to express my sincere gratitude to my Biostatistics Professor, Prof. Dr. Britta Tietjen, for her invaluable lectures and academic mentorship, which deeply inspired the foundations of this work.
+
+Furthermore, I would like to gratefully highlight the ongoing dialogues with Prof. Dr. Arno Ehresmann since 2008, which continuously allowed my thoughts and fascination with quantum mechanics to flourish and remain vibrant. 
+
+Finally, special Danke must be made to JarekN, who ventures with me to the boundaries of worlds and walks through conceptual spaces far beyond any holographic universe.
 
 
 

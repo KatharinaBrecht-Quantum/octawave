@@ -4,22 +4,15 @@
 \alias{plot_octawave_3d}
 \title{Interaktive 3D-Visualisierung der Oktaeder-Welle / Interactive 3D Visualization of the Octahedral Wave}
 \usage{
-plot_octawave_3d(zeitpunkt = 0)
-
-plot_octawave_3d(zeitpunkt = 0)
+plot_octawave_3d(resolution = 35, range = 5)
 }
 \arguments{
-\item{zeitpunkt}{Fixed time step for the snapshot / Gewählter Zeitpunkt für die Momentaufnahme.}
-
 \item{resolution}{Die Feinheit des 3D-Gitters (z.B. 30 oder 40) / The density of the 3D grid (e.g., 30 or 40).}
 
 \item{range}{Der sichtbare Raumbereich (X, Y und Z) / The visible spatial range (X, Y, and Z).}
 }
 \description{
-\link{DEUTSCH} Erstellt ein dreidimensionales, interaktives Volumenmodell des Quantenfeldes.
+\strong{DEUTSCH]:} Erstellt ein dreidimensionales, interaktives Volumenmodell des Quantenfeldes.
 
-\link{ENGLISH} Generates a three-dimensional, interactive volume model of the quantum field.
-
-Plots the quantum wave field at a fixed time step as a beautiful 3D landscape.
-Zeichnet das Wellenfeld zu einem festen Zeitpunkt als wunderschöne 3D-Landschaft.
+\strong{ENGLISH:} Generates a three-dimensional, interactive volume model of the quantum field.
 }

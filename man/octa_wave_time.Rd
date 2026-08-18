@@ -2,7 +2,7 @@
 % Please edit documentation in R/functions.R
 \name{octa_wave_time}
 \alias{octa_wave_time}
-\title{Time-dependent Octahedron Quantum Wave / Zeitabhängige Oktaeder-Quantenwelle}
+\title{Time-dependent Octahedron Quantum Wave / Zeitabhaengige Oktaeder-Quantenwelle}
 \usage{
 octa_wave_time(x, y, z, t = 0, freq = 2, radius = 1.5, damping = 0.1)
 }
@@ -15,7 +15,7 @@ octa_wave_time(x, y, z, t = 0, freq = 2, radius = 1.5, damping = 0.1)
 
 \item{radius}{Radius of the core octahedron / Radius des Oktaeders.}
 
-\item{damping}{Damping factor of the quantum wave / Dämpfungsfaktor.}
+\item{damping}{Damping factor of the quantum wave / Daempfungsfaktor.}
 }
 \description{
 Calculates the wave field at an exact time 't' to simulate dynamic movement.

@@ -2,13 +2,13 @@ Package: octawave
 Type: Package
 Title: Spatial Octahedral Quantum Wave Functions
 Version: 0.1.0
-Authors@R: person("Katharina", "Brecht",email = "katharina.quantumdata@proton.me",role = c("aut", "cre"),comment = c(ORCID = "0009-0001-2176-7476"))
-Description: unique library for simulating and visualizing 
-    3D octahedral quantum wave interferences and spatial resonance fields.
-License: MIT
+Authors@R: person("Katharina", "Brecht", email = "katharina.quantumdata@proton.me", role = c("aut", "cre"), comment = c(ORCID = "0009-0001-2176-7476"))
+Description: Provides mathematical tools for simulating and visualizing three-dimensional octahedral quantum wave interferences and spatial resonance fields. Includes functions for MRI slice generation of fullerene structures and wave models.
+License: GPL (>= 3)
 Encoding: UTF-8
-LazyData: true
 Imports: 
+    graphics,
+    grDevices,
     matlab,
     plotly
 Config/roxygen2/version: 8.1.0

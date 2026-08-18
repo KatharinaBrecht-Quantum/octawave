@@ -10,7 +10,7 @@ octa_vertices(radius = 1)
 \item{radius}{Der Abstand der Ecken vom Nullpunkt (Skalierung des Quanten-Kerns) / The distance of the vertices from the origin (scaling of the quantum core).}
 }
 \description{
-\link{DEUTSCH} Berechnet die exakten 3D-Koordinaten der 6 Oktaeder-Scheitelpunkte im Raum.
+\strong{DEUTSCH:} Berechnet die exakten 3D-Koordinaten der 6 Oktaeder-Scheitelpunkte im Raum.
 
-\link{ENGLISH} Computes the exact 3D coordinates of the 6 octahedral vertices in space.
+\strong{ENGLISH:} Computes the exact 3D coordinates of the 6 octahedral vertices in space.
 }

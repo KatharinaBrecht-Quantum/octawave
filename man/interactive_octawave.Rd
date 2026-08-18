@@ -8,5 +8,5 @@ interactive_octawave()
 }
 \description{
 Allows the user to click into the plot to trigger a new wave at that exact coordinate.
-Erlaubt es, per Mausklick eine neue Welle an der gewählten Koordinate auszulösen.
+Erlaubt es, per Mausklick eine neue Welle an der gewaehlten Koordinate auszuloesen.
 }
