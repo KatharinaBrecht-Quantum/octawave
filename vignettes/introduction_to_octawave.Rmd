@@ -1,5 +1,7 @@
 ---
 title: "Introduction to the octawave Package"
+author: "Katharina M. Brecht"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{Introduction to the octawave Package}
@@ -8,13 +10,17 @@ vignette: >
 ---
 
 ```{r, include = FALSE}
-knitr::opts_chunk$set(
+knitr::opts_chunk\$set(
   collapse = TRUE,
   comment = "#>"
 )
 ```
 
-Welcome to the `octawave` package! This library is specifically designed for the simulation and visualization of three-dimensional octahedral quantum wave interferences and spatial resonance fields. Additionally, the package provides advanced functions to generate virtual Magnetic Resonance Imaging (MRI) slice scans.
+Welcome to the `octawave` package! This library is specifically designed for the simulation and visualization of three-dimensional octahedral quantum wave interferences and spatial resonance fields. 
+
+**Scientific Foundations:** Every generated model is based on mathematically validated equations computed across a three-dimensional continuum. The underlying algorithms strictly account for multi-source wave superposition (interferences) and quantum-mechanical amplitude damping over time, transforming spatial theory into reproducible, interactive data.
+
+Additionally, the package provides advanced functions to generate virtual Magnetic Resonance Imaging (MRI) slice scans.
 
 This guide introduces you to the core functionalities of the package.
 
@@ -26,7 +32,22 @@ First, load the package into your current R session:
 library(octawave)
 ```
 
-## 2. MRI Slice Simulation
+## 2. Interactive & Dynamic 3D Simulations
+
+The package features real-time interactive environments allowing users to dynamically trigger multi-drop wave simulations and explore continuous wave progression in space:
+
+```R
+# Launch the floating 3D live landscape visualizer
+floating_3d_octawave()
+
+# Open the interactive multi-drop 3D zone for overlapping wave simulations
+interactive_multi_drop_3d()
+
+# Render the floating 3D volume model of the octahedral core in space
+interactive_volume_octawave()
+```
+
+## 3. MRI Slice Simulation
 
 The package contains specialized algorithms to compute virtual MRI scans through geometric structures. You can simulate individual slices at a specific height along the Z-axis:
 
@@ -38,13 +59,13 @@ plot_mri_fullerene(z_slice = 0.0, lang = "de")
 plot_mri_octawave(z_slice = 0.5, lang = "de")
 ```
 
-## 3. Automated Multi-Format Export
+## 4. Automated Multi-Format Export
 
 For scientific presentations, you can automatically export a complete series of slices as high-resolution PNG images and a multi-page presentation PDF with a single command:
 
 ```R
-# Automatically export slice series of my beloved Fullerene and Octawave models 
-# (Katharina M. Brecht) 
+# Automatically export slice series of Fullerene and Octawave models 
+# Developed by Katharina M. Brecht
 export_all_mri_scans(start_z = -2.0, end_z = 2.0, schritte = 10)
 ```
 
