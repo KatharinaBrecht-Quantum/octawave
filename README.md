@@ -3,7 +3,9 @@
 This project simulates dynamic, time-dependent quantum wave fields based on an octahedral structure.
 
 ### The Origin / Der Ursprung
-This system was born from a vivid night-time dream about geometric structures, waves, and collapsing spaces. It is the transition of sub-conscious creative energy into real, working mathematical R code.
+This system was born from a vivid night-time dream about geometric structures, waves, 
+and collapsing spaces. It is the transition of sub-conscious creative energy into real, 
+working mathematical R code.
 
 ### License & Academic Identity / Schutz & Akademische Identität
 Copyright (C) 2026 Katharina M. Brecht.
@@ -12,6 +14,14 @@ ORCID iD: https://orcid.org/0009-0001-2176-7476
 Protected under the GNU General Public License v3 (GPL-3.0).
 Anyone using or modifying this code MUST credit Katharina M. Brecht (ORCID:0009-0001-2176-7476) as the original author.
 
+## Research Abstract & Core Objectives
+
+This package transcends traditional, static modeling constraints by introducing an 
+applicable framework for three-dimensional (3D) quantum geometry visualization. 
+
+* **Physical Assertion:** Quantum waves and resonance fields are inherently dynamic, spatial geometries defined by complex multi-dimensional symmetries (such as octahedral vertex networks).
+* **Methodology:** Through the application of virtual Magnetic Resonance Imaging (MRI) slicing techniques, this framework transforms highly complex mathematical equations into dynamic, interactive, and visually tangible spacetime models.
+* **Open Science Impact:** By providing full reproducibility via open-source R code, this project democratizes advanced quantum geometry—proving that complex spatial interferences can be fully simulated, visualized, and examined on any standard system globally.
 
 ## Package Features & Functionalities
 
