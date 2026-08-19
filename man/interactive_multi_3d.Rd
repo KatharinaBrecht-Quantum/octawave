@@ -7,6 +7,6 @@
 interactive_multi_3d()
 }
 \description{
-Allows the user to click 3 times to create overlapping waves in a 3D landscape.
+Allows the user to click 3 times to create overlapping waves in the 3D landscape.
 Erlaubt 3 Mausklicks, um sich ueberlagernde Wellen in einer 3D-Landschaft zu erzeugen.
 }

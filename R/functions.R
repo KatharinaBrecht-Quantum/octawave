@@ -453,6 +453,6 @@ export_all_mri_scans <- function(start_z = -2, end_z = 2, schritte = 10) {
   }
   grDevices::dev.off()
 
-  message("\U0001f680 Genial! Beide Serien wurden erfolgreich exportiert!")
+  message("\U0001f680 Beide Serien wurden erfolgreich exportiert!")
 }
 

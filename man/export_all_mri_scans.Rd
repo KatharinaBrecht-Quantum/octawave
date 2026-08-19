@@ -2,7 +2,10 @@
 % Please edit documentation in R/functions.R
 \name{export_all_mri_scans}
 \alias{export_all_mri_scans}
-\title{Exportiert eine komplette Serie von Fullerene- und Octawave-MRT-Schichten (PNGs + PDFs)}
+\title{At the end and lot of trying out I was thinking how to get a complete series,
+and to export it, so like a conclusion at the end of a book lets make some
+print versions as individual PNGs or all together as pdf.
+Exportiert eine komplette Serie von Fullerene- und Octawave-MRT-Schichten (PNGs + PDFs)}
 \usage{
 export_all_mri_scans(start_z = -2, end_z = 2, schritte = 10)
 }
@@ -14,5 +17,8 @@ export_all_mri_scans(start_z = -2, end_z = 2, schritte = 10)
 \item{schritte}{Wie viele Bilder pro Serie gezeichnet werden sollen}
 }
 \description{
+At the end and lot of trying out I was thinking how to get a complete series,
+and to export it, so like a conclusion at the end of a book lets make some
+print versions as individual PNGs or all together as pdf.
 Exportiert eine komplette Serie von Fullerene- und Octawave-MRT-Schichten (PNGs + PDFs)
 }

@@ -119,9 +119,7 @@ The structural definitions, geometric computations, and data visualization workf
 
 I would like to express my sincere gratitude to my Biostatistics Professor, Prof. Dr. Britta Tietjen, for her invaluable lectures and academic mentorship, which deeply inspired the foundations of this work.
 
-Furthermore, I would like to gratefully highlight the ongoing dialogues with Prof. Dr. Arno Ehresmann since 2008, which continuously allowed my thoughts and fascination with quantum mechanics to flourish and remain vibrant. 
-
-Finally, special Danke must be made to JarekN, who ventures with me to the boundaries of worlds and walks through conceptual spaces far beyond any holographic universe.
+Finally, special Danke must be made to JarekN, who ventures with me to the boundaries of worlds and walks through conceptual spaces beyond any holographic universe.
 
 
 
