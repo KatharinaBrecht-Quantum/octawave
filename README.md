@@ -47,3 +47,7 @@ library(octawave)
 ## Acknowledgments
 
 Dedicated to the open-source continuum of physics, mathematics, and the mathematical matrix structures that map our universe.
+
+---
+
+<sub>*Licensed under GPL-3.0 — Copyright (C) 2026 Katharina Maria Brecht (ORCID: 0009-0001-2176-7476).*</sub>
